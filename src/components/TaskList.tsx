@@ -37,9 +37,9 @@ export function TaskList() {
   }
 
   function handleRemoveTask(id: number) {
-    const newTasksArray = tasks.filter((task) => task.id != id);
-    if (newTasksArray) {
-      setTasks([...newTasksArray]);
+    const filteredTasksArray = tasks.filter((task) => task.id != id);
+    if (filteredTasksArray) {
+      setTasks([...filteredTasksArray]);
     }
   }
 
